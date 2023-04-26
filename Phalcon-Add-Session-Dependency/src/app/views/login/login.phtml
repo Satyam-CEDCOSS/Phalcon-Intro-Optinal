@@ -1,0 +1,10 @@
+<?php
+if ($this->view->message == 'success'){
+    echo "<h1>Login Successful</h1>";
+    echo $this->tag->linkTo(["index", "Logout", 'class' => 'btn btn-primary']);
+}
+else{
+    echo "<h1>Invalid Id or Password</h1>";
+    echo $this->tag->linkTo(["login", "Go Back", 'class' => 'btn btn-primary']);
+}
+?>
